@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Template</title>
+    <!-- Start Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ends Google Fonts Link -->
+
+    <!-- Start Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Ends Fontawesome CDN Link -->
+
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-[#EEF3F7]">
+    <!-- Start header -->
+    <header>
+      <nav
+        class="bg-white w-[300px] h-screen fixed left-0 top-0 overflow-y-auto px-5 py-3"
+      >
+        <div class="flex items-center gap-3">
+          <div>
+            <img
+              class="w-16 h-16 object-cover"
+              src="./assets/logo.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2 class="font-[inter] text-2xl font-bold">GoldenPeach</h2>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <hr class="border-[1px] border-[#E4E4E4]" />
+        </div>
+
+        <!-- start main home -->
+        <div>
+          <p
+            class="text-[#BDC9DB] text-[12px] font-[inter] font-bold uppercase"
+          >
+            MAIN HOME
+          </p>
+
+          <a
+            class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 my-5"
+            href="#"
+          >
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-grip text-2xl"></i>
+              <span class="text-base font-[500]">Dashboard</span>
+            </div>
+          </a>
+        </div>
+        <!-- end main home -->
+
+        <!-- start all page -->
+        <div>
+          <div class="my-5">
+            <p
+              class="text-[#BDC9DB] text-[12px] font-[inter] font-bold uppercase"
+            >
+              ALL PAGE
+            </p>
+          </div>
+
+          <ul class="space-y-5">
+            <li>
+              <div
+                class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
+                href="#"
+              >
+                <div
+                  onclick="serviceDropDown()"
+                  class="flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-gear text-2xl"></i>
+                    <span class="text-base font-[500]">Service</span>
+                  </div>
+
+                  <span id="serviceArrow">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </div>
+              </div>
+
+              <ul id="serviceSubMenu" class="w-4/5 mx-auto mt-5 hidden">
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Add Service</li>
+                </a>
+
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 mt-3"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Service List</li>
+                </a>
+              </ul>
+            </li>
+
+            <li>
+              <div
+                class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
+                href="#"
+              >
+                <div
+                  onclick="teamMemberDropDown()"
+                  class="flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-people-group text-2xl"></i>
+                    <span class="text-base font-[500]">Team Member</span>
+                  </div>
+
+                  <span id="teamMemberArrow" >
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </div>
+              </div>
+
+              <ul id="teamMemberSubMenu" class="w-4/5 mx-auto mt-5 hidden">
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Add Team Member</li>
+                </a>
+
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 mt-3"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Team Member List</li>
+                </a>
+              </ul>
+            </li>
+
+            <li>
+              <div
+                class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
+                href="#"
+              >
+                <div
+                  onclick="projectDropDown()"
+                  class="flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-images text-2xl"></i>
+                    <span class="text-base font-[500]">Project</span>
+                  </div>
+
+                  <span id="projectArrow" >
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </div>
+              </div>
+
+              <ul id="projectSubMenu" class="w-4/5 mx-auto mt-5 hidden">
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Add Project</li>
+                </a>
+
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 mt-3"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Project List</li>
+                </a>
+              </ul>
+            </li>
+
+            <li>
+              <div
+                class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
+                href="#"
+              >
+                <div
+                  onclick="testimonialDropDown()"
+                  class="flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-comments text-2xl"></i>
+                    <span class="text-base font-[500]">Testimonial</span>
+                  </div>
+
+                  <span id="testimonialArrow" >
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </div>
+              </div>
+
+              <ul id="testimonialSubMenu" class="w-4/5 mx-auto mt-5 hidden">
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Add Testimonial</li>
+                </a>
+
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 mt-3"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Testimonial List</li>
+                </a>
+              </ul>
+            </li>
+
+            <li>
+              <div
+                class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
+                href="#"
+              >
+                <div
+                  onclick="blogDropDown()"
+                  class="flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-blog text-2xl"></i>
+                    <span class="text-base font-[500]">Blog</span>
+                  </div>
+
+                  <span id="blogArrow" >
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </div>
+              </div>
+
+              <ul id="blogSubMenu" class="w-4/5 mx-auto mt-5 hidden">
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Add Blog</li>
+                </a>
+
+                <a
+                  class="block text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 mt-3"
+                  href="#"
+                >
+                  <li class="list-disc list-inside">Blog List</li>
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end all page -->
+      </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start javascript -->
+    <script>
+
+      function serviceDropDown() {
+        document.querySelector("#serviceSubMenu").classList.toggle("hidden");
+        document.querySelector("#serviceArrow").classList.toggle("rotate-180");
+      }
+
+      function teamMemberDropDown() {
+        document.querySelector("#teamMemberSubMenu").classList.toggle("hidden");
+        document.querySelector("#teamMemberArrow").classList.toggle("rotate-180");
+      }
+
+      function projectDropDown() {
+        document.querySelector("#projectSubMenu").classList.toggle("hidden");
+        document.querySelector("#projectArrow").classList.toggle("rotate-180");
+
+      }
+
+      function testimonialDropDown() {
+        document.querySelector("#testimonialSubMenu").classList.toggle("hidden");
+        document.querySelector("#testimonialArrow").classList.toggle("rotate-180");
+
+      }
+
+      function blogDropDown() {
+        document.querySelector("#blogSubMenu").classList.toggle("hidden");
+        document.querySelector("#blogArrow").classList.toggle("rotate-180");
+
+      }
+    </script>
+    <!-- End javascript -->
+  </body>
+</html>
