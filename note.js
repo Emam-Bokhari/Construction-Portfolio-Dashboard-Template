@@ -1,0 +1,1 @@
+// 1. proti ta te p-5 kore gap thkbe manin ar maje
