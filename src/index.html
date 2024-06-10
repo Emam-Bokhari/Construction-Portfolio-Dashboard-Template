@@ -26,23 +26,42 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="bg-[#EEF3F7]">
+
     <!-- Start header -->
     <header>
-      <nav
-        class="bg-white w-[300px] h-screen fixed left-0 top-0 overflow-y-auto px-5 py-3"
+
+     <nav>
+
+     <div>
+      <span onclick="openBar()" class="text-3xl cursor-pointer text-black absolute top-5 left-4" >
+        <i class="fa-solid fa-bars"></i>
+      </span>
+
+      <div 
+        class="sidebar bg-white w-[300px] duration-1000  h-screen fixed lg:left-0 left-[-300px] top-0 overflow-y-auto px-5 py-3"
       >
-        <div class="flex items-center gap-3">
-          <div>
-            <img
-              class="w-16 h-16 object-cover"
-              src="./assets/logo.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <h2 class="font-[inter] text-2xl font-bold">GoldenPeach</h2>
+       <div class="flex items-center justify-between" >
+
+        <div>
+          <div class="flex items-center gap-3">
+            <div>
+              <img
+                class="w-16 h-16 object-cover"
+                src="./assets/logo.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2 class="font-[inter] text-2xl font-bold">Dreams</h2>
+            </div>
           </div>
         </div>
+        
+        <div onclick="openBar()" class="block lg:hidden" >
+          <i class="fa-regular fa-circle-xmark text-2xl"></i>
+        </div>
+
+       </div>
 
         <div class="my-5">
           <hr class="border-[1px] border-[#E4E4E4]" />
@@ -79,6 +98,8 @@
           </div>
 
           <ul class="space-y-5">
+
+            <!-- service -->
             <li>
               <div
                 class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
@@ -116,6 +137,7 @@
               </ul>
             </li>
 
+            <!-- team member -->
             <li>
               <div
                 class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
@@ -153,6 +175,7 @@
               </ul>
             </li>
 
+            <!-- project -->
             <li>
               <div
                 class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
@@ -190,6 +213,7 @@
               </ul>
             </li>
 
+            <!-- testimonial -->
             <li>
               <div
                 class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
@@ -227,6 +251,7 @@
               </ul>
             </li>
 
+            <!-- blog -->
             <li>
               <div
                 class="w-full p-3 rounded-xl block bg-[#E9F1FF] text-[#111111] hover:text-[#2E7EFD] transition-all duration-300 cursor-pointer"
@@ -263,12 +288,23 @@
                 </a>
               </ul>
             </li>
+
           </ul>
+
         </div>
         <!-- end all page -->
-      </nav>
+      </div>
+     </div>
+
+     </nav>
     </header>
     <!-- End header -->
+
+    <main class="border-2 border-red-500 ml-0 lg:ml-[300px]" >
+
+      
+
+    </main>
 
     <!-- Start javascript -->
     <script>
@@ -299,6 +335,10 @@
         document.querySelector("#blogSubMenu").classList.toggle("hidden");
         document.querySelector("#blogArrow").classList.toggle("rotate-180");
 
+      }
+
+      function openBar(){
+        document.querySelector(".sidebar").classList.toggle("left-[-300px]")
       }
     </script>
     <!-- End javascript -->
