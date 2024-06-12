@@ -504,11 +504,12 @@
       </div>
       <!-- end total service,team members,projects,blogs -->
 
-      <div class="my-5 flex flex-col 2xl:flex-row items-center gap-5" >
+      <!-- start service,team members,projects gallery -->
+      <div class="my-5 flex flex-col 2xl:flex-row  gap-5" >
 
         <!-- start service table -->
         <div
-          class="p-5 w-full 2xl:w-2/5 h-[512px]  bg-white rounded-xl overflow-auto"
+          class="p-5 w-full 2xl:w-2/5 h-auto  bg-white rounded-xl "
         >
 
         <div class="flex items-center justify-between mb-5" >
@@ -519,89 +520,91 @@
         </button>
         </div>
 
-          <table>
+          <div class="overflow-auto">
+            <table>
 
-            <thead>
-              <tr>
-                <td class="text-[#111111] font-[inter] font-[700] text-sm pb-3 align-top whitespace-nowrap" >Image</td>
-                <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap" >Service Name</td>
-                <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap"" >Description</td>
-              </tr>
-            </thead>
-
-            <tbody>
-
-              <tr >
-                  <td class="pb-4 align-top">
-                    <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
-                      <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
-                    </div>
-                  </td>
-                  <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] ">Material Supply</td>
-                  <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
-              </tr>
-
-              <tr >
-                  <td class="pb-4 align-top">
-                    <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
-                      <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
-                    </div>
-                  </td>
-                  <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] ">Building Construction</td>
-                  <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet...</td>
-              </tr>
-
-              <tr >
-                  <td class="pb-4 align-top">
-                    <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
-                      <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
-                    </div>
-                  </td>
-                  <td class="pl-3  pb-4 align-middle text-sm font-[inter] font-[500] ">Interior Design</td>
-                  <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
-              </tr>
-
-              <tr >
-                  <td class="pb-4 align-top">
-                    <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
-                      <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
-                    </div>
-                  </td>
-                  <td class="pl-3  pb-4 align-middle text-sm font-[inter] font-[500] ">Road Construction</td>
-                  <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet... </td>
-              </tr>
-
-              <tr >
-                  <td class="pb-4 align-top">
-                    <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
-                      <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
-                    </div>
-                  </td>
-                  <td class="pl-3  pb-4 align-middle text-sm font-[inter] font-[500] ">Lorem ipsum dolor sit amet</td>
-                  <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, adip Lorem ipsum dolor sit amet...</td>
-              </tr>
-
-              <tr >
-                  <td class="pb-4 align-top">
-                    <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
-                      <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
-                    </div>
-                  </td>
-                  <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] ">Lorem ipsum dolor sit amet</td>
-                  <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, adip Lorem ipsum dolor sit amet...</td>
-              </tr>
-
-          </tbody>
-          
-
-          </table>
+              <thead>
+                <tr>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pb-3 align-top whitespace-nowrap" >Image</td>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap" >Service Name</td>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap"" >Description</td>
+                </tr>
+              </thead>
+  
+              <tbody>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] ">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] ">Building Construction</td>
+                    <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet...</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3  pb-4 align-middle text-sm font-[inter] font-[500] ">Interior Design</td>
+                    <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3  pb-4 align-middle text-sm font-[inter] font-[500] ">Road Construction</td>
+                    <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet... </td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3  pb-4 align-middle text-sm font-[inter] font-[500] ">Lorem ipsum dolor sit amet</td>
+                    <td class="pl-3 pb-4  align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, adip Lorem ipsum dolor sit amet...</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] ">Lorem ipsum dolor sit amet</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, adip Lorem ipsum dolor sit amet...</td>
+                </tr>
+  
+            </tbody>
+            
+  
+            </table>
+          </div>
 
         </div>
         <!-- end service table -->
 
         <!-- start team members table -->
         <div
-          class="p-5 w-full 2xl:w-[30%] h-[512px]  bg-white rounded-xl overflow-auto"
+          class="p-5 w-full 2xl:w-[30%] h-auto  bg-white rounded-xl "
         >
 
         <div class="flex items-center justify-between mb-5" >
@@ -612,7 +615,7 @@
         </button>
         </div>
 
-          <div>
+          <div class="overflow-auto">
             <!-- card 01 -->
             <div class="pb-3  w-full">
               <div class="border-2 border-dotted border-[#E4E4E4] rounded-2xl p-4">
@@ -659,7 +662,7 @@
 
         <!-- start projects table -->
         <div
-          class="p-5 w-full 2xl:w-[30%] h-[512px]  bg-white rounded-xl overflow-auto"
+          class="p-5 w-full 2xl:w-[30%] h-auto  bg-white rounded-xl "
         >
 
         <div class="flex items-center justify-between mb-5" >
@@ -670,8 +673,8 @@
         </button>
         </div>
 
-          <div>
-            <!-- card 01 -->
+          <div class="overflow-auto" >
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
               <div class="border-2 border-dotted border-[#E4E4E4] rounded-2xl p-2">  
@@ -693,16 +696,154 @@
               <div class="border-2 border-dotted border-[#E4E4E4] rounded-2xl p-2">  
                   <img class="w-full h-auto object-cover rounded-lg" src="./assets/profile.jpg" alt="">
               </div>
-
-              
-             
-
           </div>
              
         </div>
         <!-- end projects table -->
+      </div>
 
       </div>
+      <!-- end service,team members,projects gallyery -->
+
+      <!-- start blogs and testimonials -->
+      <div class="my-5 flex flex-col 2xl:flex-row items-center gap-5">
+
+        <!-- start blogs table -->
+        <div
+          class="p-5 w-full 2xl:w-3/5 h-auto  bg-white rounded-xl "
+        >
+
+        <div class="flex items-center justify-between mb-5" >
+          <h2 class="text-[#111111] font-[inter] font-[700] text-xl">Blogs</h2>
+
+        <button class="text-[#BDC9DB] font-[inter] font-[500] text-sm" >
+          View All
+        </button>
+        </div>
+
+          <div class="overflow-auto">
+            <table>
+
+              <thead>
+                <tr>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pb-3 align-top whitespace-nowrap" >Image</td>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap" >Title</td>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap" >Category</td>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap" >Description</td>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap" >Published Date</td>
+                  <td class="text-[#111111] font-[inter] font-[700] text-sm pl-3 pb-2 align-top whitespace-nowrap" >Author</td>
+                </tr>
+              </thead>
+  
+              <tbody>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap 2xl:whitespace-normal">How to identify good bricks?</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Jun-02-2024</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Admin</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap 2xl:whitespace-normal ">How to identify good bricks?</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Jun-02-2024</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Admin</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap 2xl:whitespace-normal">How to identify good bricks?</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Jun-02-2024</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Admin</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap 2xl:whitespace-normal ">How to identify good bricks?</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Jun-02-2024</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Admin</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap 2xl:whitespace-normal">How to identify good bricks?</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Jun-02-2024</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Admin</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap 2xl:whitespace-normal">How to identify good bricks?</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Jun-02-2024</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Admin</td>
+                </tr>
+  
+                <tr >
+                    <td class="pb-4 align-top">
+                      <div class="w-10 h-12 bg-[#EFF4F8] flex items-center justify-center rounded-xl" >
+                        <img class="w-8 h-10 object-cover rounded-lg" src="./assets/profile.jpg" alt="">
+                      </div>
+                    </td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap 2xl:whitespace-normal">How to identify good bricks?</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Material Supply</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-normal whitespace-nowrap 2xl:whitespace-normal">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet...</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Jun-02-2024</td>
+                    <td class="pl-3 pb-4 align-middle text-sm font-[inter] font-[500] whitespace-nowrap">Admin</td>
+                </tr>
+  
+               
+  
+            </tbody>
+            
+  
+            </table>
+          </div>
+
+        </div>
+        <!-- end blogs table -->
+
+
+      </div>
+      <!-- end blogs and testimonials -->
+
+
 
     </main>
 
